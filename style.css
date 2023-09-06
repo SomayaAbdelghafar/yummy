@@ -1,0 +1,94 @@
+body{
+    background-color: #0D0D0D;
+}
+.loadingScreen{
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sideNav{
+    z-index: 9999;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: -200px;
+    width: 270px;
+    height: 100vh;
+    background-color: #0D0D0D;
+
+    
+}
+.sideNav .rightPart{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: 70px;
+    padding: 8px;
+    background-color: #FFFFFF;
+}
+.sideNav .leftPart{
+    box-sizing: border-box;
+    width: 200px;
+    height: 100vh;
+}
+
+.leftPart li,.sideNav i{
+    cursor: pointer;
+}
+ .container input::placeholder{
+    color: white;
+    opacity: .5;
+}
+.meal{
+    position: relative;
+
+}
+.meal .mealLayer{
+    position: absolute;
+   left: 0%;
+   right: 0%;
+    top: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+.meal:hover .mealLayer{
+    top: 0%;
+}  
+.formArea p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #F8D7DA;
+    color: #842029;
+}
+.formArea input::placeholder{
+    color: rgb(27, 25, 25);
+}
+.mealDescription li{
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid;
+   
+    border-radius: 10px;
+    
+}
+.recipes li{
+    background-color: #CFF4FC;
+    color: #055160;
+}
+.tags li{
+    background-color: #F8D7DA;
+    color: #842029;
+}
+.ingradientBox{
+    height: 300px;
+    overflow: hidden;
+}

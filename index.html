@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- loading screen -->
+    <div class="loadingScreen bg-dark">
+        <i class="fa-solid fa-spinner fa-spin text-white fa-7x"></i>
+    </div>
+    <!-- side-nav-bar -->
+    <div class="sideNav m-0 overflow-hidden">
+        <div class="leftPart py-4 px-3 d-flex flex-column justify-content-between align-items-start">
+            <ul class="list-unstyled text-white">
+                <li id="searchBtn" class=" animate__animated animate__fadeOutBottomLeft py-2">Search</li>
+                <li id="categBtn" class=" animate__animated animate__fadeOutBottomLeft py-2">Categories</li>
+                <li id="areaBtn" class="animate__animated animate__fadeOutBottomLeft py-2">Area</li>
+                <li id="ingredientsBtn" class="animate__animated animate__fadeOutBottomLeft py-2">Ingredients</li>
+                <li id="formBtn" class="animate__animated animate__fadeOutBottomLeft py-2">Contact Us</li>
+            </ul>
+            <div class="footer text-white ">
+                <div class="leftIcons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+
+                </div>
+                <p>Copyright Â© 2019 All Rights
+                    Reserved.
+                </p>
+
+            </div>
+
+        </div>
+        <div class="rightPart d-flex  flex-column justify-content-around align-items-center">
+            <div class="yummyIcon">
+                <img src="yummy1.png" alt="" class="w-100">
+            </div>
+            <div>
+                <i class="open-btn fa-2x fa-solid fa-bars"></i>
+                <i class=" close-btn fa-2x fa-solid fa-xmark d-none"></i>
+            </div>
+            <div class="rightIcons">
+                <div><i class="fa-solid fa-globe"></i></div>
+                <div><i class="fa-solid fa-share-nodes"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="min-vh-100  container py-4">
+        <div class="searchArea d-none">
+            <div class="row py-4 ">
+                <div class="col-md-6 ">
+                    <input id="searchByNameVar" class="form-control bg-transparent text-white" type="text"
+                        placeholder="Search By Name">
+                </div>
+                <div class="col-md-6">
+                    <input id="searchByFLetterVar" maxlength="1" class="form-control bg-transparent text-white"
+                        type="text" placeholder="Search By First Letter">
+                </div>
+            </div>
+        </div>
+
+        <div class="formArea d-none">
+            <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+                <div class="container w-75 text-center">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+                            <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Special characters and numbers not allowed
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="emailInput" type="email" class="form-control " placeholder="Enter Your Email">
+                            <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Email not valid *exemple@yyy.zzz
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="phoneInput" type="text" class="form-control " placeholder="Enter Your Phone">
+                            <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid Phone Number
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="ageInput" type="number" class="form-control " placeholder="Enter Your Age">
+                            <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid age
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="passwordInput" type="password" class="form-control "
+                                placeholder="Enter Your Password">
+                            <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                password should contain at least 1capital and small letter
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="repasswordInput" type="password" class="form-control " placeholder="Repassword">
+                            <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                passwords should be identical
+                            </div>
+                        </div>
+                    </div>
+                    <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="displayrArea">
+    
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+<script src=" code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="main.js" type="module"></script>
+
+</html>
